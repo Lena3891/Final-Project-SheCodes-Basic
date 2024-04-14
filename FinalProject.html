@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scanner Personality</title>
+    <style>
+      body {
+        background-color: rgb(8, 147, 106);
+      }
+      h1 {
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: black;
+      }
+
+      h2 {
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border: 2px solid black;
+        padding: 20px;
+        font-size: 18px;
+        line-height: 1.5;
+        border-radius: 25px;
+        color: black;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+
+      p {
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        line-height: 1.5;
+        font-size: 11px;
+        margin: 5px 0 5px;
+      }
+      hr {
+        border: 1px solid black;
+      }
+      button {
+        display: block;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 20px auto;
+        background: #f9a41a;
+        color: black;
+        font-size: 15px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 25px;
+        box-shadow: 5px 5px 5px rgba(222, 170, 12, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+
+      .container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 15px 60px;
+      }
+
+      .more informations:hover {
+        text-decoration: none;
+      }
+
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Scanner Personality</h1>
+      <h2>
+        Jack of all trades - people with numerous interests, hobbies and skills
+      </h2>
+      <img
+        src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/282/original/9964BDE0-2B0E-42F2-A0E9-2F7B7754-removebg-preview.png?1706813009"
+        alt="Scanner Personality"
+        width="200"
+      />
+      <p>
+        <strong>Are you looking for this ONE thing</strong>, but you can´t find
+        it? Are you interested in multiple things, but often the topics you have
+        been keen on lost their attraction and the feeling of enthusiasm
+        disappeared? Or you just can´t choose which idea to follow, because
+        there are too many? You are stuck of too many options, which leads you
+        to not doing anything at all instead?
+      </p>
+      <hr />
+      <br />
+      <p>
+        If you never heard of <em>Scanners</em> before, here could be an answer
+        for you 👇👇👇
+      </p>
+      <a
+        href="https://twominutebreak.com/blog/on-being-a-scanner"
+        target="_blank"
+        class="more informations"
+        >More informations on TwoMinuteBreak</a
+      >
+
+      <button class="joinButton">👉 Join the Scanner Club</button>
+      <p class="footer">
+        This page was built by
+        <a href="https://www.instagram.com/scanner_mindset_" target="_blank">
+          Magdalena Zyglewicz
+        </a>
+      </p>
+    </div>
+    <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    function join() {
+      let name = prompt("What is your name?");
+      if (name !== null && name !== "") {
+        let email = prompt("What is your email address?");
+        if (email !== null && email !== "") {
+          alert("Thanks, " + name + ". Please check your email. We have sent you an invitation to the club.");
+        } else {
+          alert("Please provide a valid email address.");
+        }
+      } else {
+        alert("Please provide your name.");
+      }
+    }
+
+    let joinButton = document.querySelector(".joinButton");
+    joinButton.addEventListener("click", join);
+  });
+</script>
+  </body>
+</html>
